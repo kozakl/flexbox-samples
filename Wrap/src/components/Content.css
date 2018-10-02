@@ -1,0 +1,34 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  background: #BBBBBB;
+  margin: 0 auto;
+  max-width: 50rem;
+  height: 30rem;
+}
+
+.div {
+  min-width: 10rem;
+  flex: 1;
+}
+
+.div1 {
+  @extend .div;
+  background: red;
+}
+
+.div2 {
+  @extend .div;
+  background: green;
+  //flex: 1.5;
+}
+
+.div3 {
+  @extend .div;
+  background: yellow;
+}
+
+.div4 {
+  @extend .div;
+  background: blue;
+}

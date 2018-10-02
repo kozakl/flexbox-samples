@@ -1,0 +1,27 @@
+.content {
+  display: flex;
+  background: #BBBBBB;
+  margin: 0 auto;
+  width:  50rem;
+  height: 30rem;
+}
+
+.div1 {
+  background: red;
+  flex: 1;
+}
+
+.div2 {
+  background: green;
+  flex: 2;
+}
+
+.div3 {
+  background: yellow;
+  flex: 1;
+}
+
+.div4 {
+  background: blue;
+  flex: 1;
+}

@@ -1,9 +1,7 @@
 import * as React from 'react';
 import {Redirect, Route, Switch} from 'react-router';
 import {HashRouter} from 'react-router-dom';
-import {DashoffsetSample} from '../../pages/dashoffset-sample';
-import {MarkerSample} from '../../pages/marker-sample';
-import {PatternSample} from '../../pages/pattern-sample';
+import {FlexSample} from '../../pages/flex-sample';
 
 export default function Content()
 {
@@ -15,15 +13,11 @@ export default function Content()
                     defaultValue={location.hash}
                     onChange={(event)=>
                         window.location.href = event.target.value}>
-                    <option value="#/dashoffset">Dashoffset</option>
-                    <option value="#/marker">Marker</option>
-                    <option value="#/pattern-sample">Pattern</option>
+                    <option value="#/flex">Flex</option>
                 </select>
                 <Switch>
-                    <Redirect from="/" to='/dashoffset' exact/>
-                    <Route path="/dashoffset" component={DashoffsetSample}/>
-                    <Route path="/marker" component={MarkerSample}/>
-                    <Route path="/pattern-sample" component={PatternSample}/>
+                    <Redirect from="/" to='/flex' exact/>
+                    <Route path="/flex" component={FlexSample}/>
                 </Switch>
             </>
         </HashRouter>

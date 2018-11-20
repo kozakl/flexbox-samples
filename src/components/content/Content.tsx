@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Redirect, Route, Switch} from 'react-router';
 import {HashRouter} from 'react-router-dom';
 import {FlexSample} from '../../pages/flex-sample';
+import {GrowSample} from '../../pages/grow-sample';
 
 export default function Content()
 {
@@ -14,10 +15,12 @@ export default function Content()
                     onChange={(event)=>
                         window.location.href = event.target.value}>
                     <option value="#/flex">Flex</option>
+                    <option value="#/grow">Grow</option>
                 </select>
                 <Switch>
                     <Redirect from="/" to='/flex' exact/>
                     <Route path="/flex" component={FlexSample}/>
+                    <Route path="/grow" component={GrowSample}/>
                 </Switch>
             </>
         </HashRouter>

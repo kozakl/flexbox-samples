@@ -1,0 +1,33 @@
+.content {
+  display: flex;
+  background: #BBBBBB;
+  margin: 0 auto;
+  width: 50rem;
+  height: 30rem;
+}
+
+.div {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.div1 {
+  @extend .div;
+  background: red;
+}
+
+.div2 {
+  @extend .div;
+  background: green;
+  flex-grow: 3;
+}
+
+.div3 {
+  @extend .div;
+  background: yellow;
+}
+
+.div4 {
+  @extend .div;
+  background: blue;
+}

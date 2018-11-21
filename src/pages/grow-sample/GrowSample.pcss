@@ -1,8 +1,17 @@
 .grow {
   display: flex;
+  font-size: 1.75rem;
+  text-align: center;
   margin: 0 auto;
   width: 50rem;
   height: 30rem;
+  
+  & > div::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
 }
 
 .div {
@@ -10,23 +19,23 @@
   flex-grow: 1;
 }
 
-.div1 {
+.element1 {
   @extend .div;
   background: red;
 }
 
-.div2 {
+.element2 {
   @extend .div;
   background: green;
   flex-grow: 3;
 }
 
-.div3 {
+.element3 {
   @extend .div;
   background: yellow;
 }
 
-.div4 {
+.element4 {
   @extend .div;
   background: blue;
 }

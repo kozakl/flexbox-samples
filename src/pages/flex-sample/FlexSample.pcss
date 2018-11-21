@@ -5,27 +5,36 @@
 .flex {
   display: flex;
   background: var(--bg-color);
+  font-size: 1.75rem;
+  text-align: center;
   margin: 0 auto;
   width: 50rem;
   height: 30rem;
+  
+  & > div::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
 }
 
-.div1 {
+.element1 {
   flex: 1;
   background: red;
 }
 
-.div2 {
+.element2 {
   flex: 2;
   background: green;
 }
 
-.div3 {
+.element3 {
   flex: 1;
   background: yellow;
 }
 
-.div4 {
+.element4 {
   flex: 1;
   background: blue;
 }
